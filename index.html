@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Rabbit. Děláme weby. Nikoho neztratíme v menu.</title>
+  <meta name="description" content="Weby od vizitky po e-shop. 4 tiery, jasné ceny, konkrétní termín. Showcase realizovaných webů a vzorový ceník.">
+  <meta name="theme-color" content="#000000">
+
+  <meta property="og:title" content="White Rabbit. Děláme weby.">
+  <meta property="og:description" content="Od vizitky po e-shop. 4 tiery, jasné ceny, konkrétní termín.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="og/og-image.jpg">
+  <meta property="og:locale" content="cs_CZ">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="img/wr-logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       1. Top nav (sticky)
+       ============================================================ -->
+  <header class="nav" role="banner">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#" aria-label="White Rabbit, zpět na začátek">
+        <img src="img/wr-logo.svg" alt="White Rabbit">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Otevřít menu">
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="primary-nav" aria-label="Hlavní menu">
+        <a href="#prace">Naše práce</a>
+        <a href="#tiery">Tiery</a>
+        <a href="#proces">Proces</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="nav-cta" href="mailto:info@whiterabbit.cz?subject=Web%20pro%20[va%C5%A1i%20zna%C4%8Dku]">Napsat nám</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         2. Hero
+         ============================================================ -->
+    <section class="hero" aria-labelledby="hero-h">
+      <h1 id="hero-h">Děláme weby. Nikoho neztratíme v menu.</h1>
+      <p class="hero-sub">Od vizitky po e-shop. 4 tiery, jasné ceny, konkrétní termín.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#prace">Naše práce →</a>
+        <a class="btn btn-outline" href="#tiery">Cena podle rozsahu</a>
+      </div>
+      <p class="hero-tagline">Follow the White Rabbit...</p>
+    </section>
+
+    <!-- ============================================================
+         3. Stats strip
+         ============================================================ -->
+    <section class="stats" aria-label="Čísla v kostce">
+      <div class="stats-inner">
+        <div>
+          <div class="stat-num">8</div>
+          <div class="stat-label">realizovaných webů</div>
+        </div>
+        <div>
+          <div class="stat-num">100 %</div>
+          <div class="stat-label">předáno v termínu</div>
+        </div>
+        <div>
+          <div class="stat-num">14 dní</div>
+          <div class="stat-label">support zdarma</div>
+        </div>
+        <div>
+          <div class="stat-num">4</div>
+          <div class="stat-label">tiery</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. Naše práce (showcase grid)
+         ============================================================ -->
+    <section class="section" id="prace" aria-labelledby="prace-h">
+      <header class="section-head">
+        <h2 id="prace-h">Naše práce</h2>
+        <p class="section-sub">8 živých webů, různé tiery, různé scope. Klik vás vezme na produkci.</p>
+      </header>
+
+      <div class="show-grid">
+
+        <!-- 1. Dark Green Solutions · T1 · PŘEDÁNO -->
+        <article class="show-tile">
+          <a class="show-thumb" href="https://darkgreensolutions.cz" target="_blank" rel="noopener" aria-label="Otevřít Dark Green Solutions">
+            <span class="show-status">PŘEDÁNO</span>
+            <span class="show-tier">T1</span>
+            <img src="img/show-darkgreen.png" alt="Náhled webu Dark Green Solutions" loading="lazy" width="1280" height="800">
+          </a>
+          <div class="show-body">
+            <h3 class="show-title">Dark Green Solutions</h3>
+            <p class="show-desc">Brand prezentace pro environmentální poradenskou firmu. Statický web, kontaktní formulář, MS 365 napojení.</p>
+            <p class="show-url">darkgreensolutions.cz</p>
+          </div>
+        </article>
+
+        <!-- 2. Toma džusy · T2 · PŘEDÁNO -->
+        <article class="show-tile">
+          <a class="show-thumb" href="https://tomadzusy.cz" target="_blank" rel="noopener" aria-label="Otevřít Toma džusy">
+            <span class="show-status">PŘEDÁNO</span>
+            <span class="show-tier">T2</span>
+            <img src="img/show-toma.png" alt="Náhled webu Toma džusy" loading="lazy" width="1280" height="800">
+          </a>
+          <div class="show-body">
+            <h3 class="show-title">Toma džusy</h3>
+            <p class="show-desc">Brand web pro tradiční českou značku ovocných džusů. Příběh značky, produktová řada, distribuce.</p>
+            <p class="show-url">tomadzusy.cz</p>
+          </div>
+        </article>
+
+        <!-- 3. Marvis auto · T2 · PŘEDÁNO -->
+        <article class="show-tile">
+          <a class="show-thumb" href="https://marvisauto.cz" target="_blank" rel="noopener" aria-label="Otevřít Marvis auto">
+            <span class="show-status">PŘEDÁNO</span>
+            <span class="show-tier">T2</span>
+            <img src="img/show-marvis.png" alt="Náhled webu Marvis auto" loading="lazy" width="1280" height="800">
+          </a>
+          <div class="show-body">
+            <h3 class="show-title">Marvis auto</h3>
+            <p class="show-desc">Web autoservisu v Dobříči. Služby, ceník, kontakt, online objednání termínu.</p>
+            <p class="show-url">marvisauto.cz</p>
+          </div>
+        </article>
+
+        <!-- 4. Monkey Pot · T1 · PŘEDÁNO -->
+        <article class="show-tile">
+          <a class="show-thumb" href="https://whiterabbitcz-dev.github.io/monkeypot/" target="_blank" rel="noopener" aria-label="Otevřít Monkey Pot">
+            <span class="show-status">PŘEDÁNO</span>
+            <span class="show-tier">T1</span>
+            <img src="img/show-monkeypot.png" alt="Náhled webu Monkey Pot" loading="lazy" width="1280" height="800">
+          </a>
+          <div class="show-body">
+            <h3 class="show-title">Monkey Pot</h3>
+            <p class="show-desc">Keramický ateliér na Letné. Kurzy točení, e-shop, gastro spolupráce. Personal brand Martina Minkse.</p>
+            <p class="show-url">whiterabbitcz-dev.github.io/monkeypot</p>
+          </div>
+        </article>
+
+        <!-- 5. Headshots · T1 · PŘEDÁNO -->
+        <article class="show-tile">
+          <a class="show-thumb" href="https://headshotscz.vercel.app" target="_blank" rel="noopener" aria-label="Otevřít Headshots">
+            <span class="show-status">PŘEDÁNO</span>
+            <span class="show-tier">T1</span>
+            <img src="img/show-headshots.png" alt="Náhled webu Headshots" loading="lazy" width="1280" height="800">
+          </a>
+          <div class="show-body">
+            <h3 class="show-title">Headshots</h3>
+            <p class="show-desc">Portrétní fotograf Martin Svoboda z Prahy. Vizitka s portfoliem, about a online bookingem. Statický export.</p>
+            <p class="show-url">headshotscz.vercel.app</p>
+          </div>
+        </article>
+
+        <!-- 6. Lughnasad · T2 · PROBÍHÁ -->
+        <article class="show-tile">
+          <a class="show-thumb" href="https://whiterabbitcz-dev.github.io/Lughnasad/" target="_blank" rel="noopener" aria-label="Otevřít Lughnasad festival">
+            <span class="show-status">PROBÍHÁ</span>
+            <span class="show-tier">T2</span>
+            <img src="img/show-lughnasad.png" alt="Náhled webu Lughnasad festival" loading="lazy" width="1280" height="800">
+          </a>
+          <div class="show-body">
+            <h3 class="show-title">Lughnasad festival</h3>
+            <p class="show-desc">Web pro 20. ročník mezinárodního festivalu keltské kultury. Program, vstupenky, merch, areál, FAQ.</p>
+            <p class="show-url">whiterabbitcz-dev.github.io/Lughnasad</p>
+          </div>
+        </article>
+
+        <!-- 7. White Rabbit · T2 · PROBÍHÁ -->
+        <article class="show-tile">
+          <a class="show-thumb" href="https://wr-web.vercel.app" target="_blank" rel="noopener" aria-label="Otevřít White Rabbit">
+            <span class="show-status">PROBÍHÁ</span>
+            <span class="show-tier">T2</span>
+            <img src="img/show-whiterabbit.png" alt="Náhled webu White Rabbit" loading="lazy" width="1280" height="800">
+          </a>
+          <div class="show-body">
+            <h3 class="show-title">White Rabbit</h3>
+            <p class="show-desc">Vlastní web. Bez buzzwordů, bez stockových obrázků. Černá s žlutou.</p>
+            <p class="show-url">wr-web.vercel.app</p>
+          </div>
+        </article>
+
+        <!-- 8. Beer Museum · T3 · PROBÍHÁ -->
+        <article class="show-tile">
+          <a class="show-thumb" href="https://beeer-museum.vercel.app/cs" target="_blank" rel="noopener" aria-label="Otevřít Beer Museum">
+            <span class="show-status">PROBÍHÁ</span>
+            <span class="show-tier">T3</span>
+            <img src="img/show-beermuseum.png" alt="Náhled webu Beer Museum" loading="lazy" width="1280" height="800">
+          </a>
+          <div class="show-body">
+            <h3 class="show-title">Beer Museum</h3>
+            <p class="show-desc">Web pro Czech Beer Museum Prague. Multi-jazyčný (CS / EN / DE / JP), online prodej vstupenek, sekce zážitků, Google reviews integrace.</p>
+            <p class="show-url">beeer-museum.vercel.app/cs</p>
+          </div>
+        </article>
+
+        <!-- 9. CTA dlaždice (inverzní) -->
+        <article class="show-cta">
+          <div class="show-cta-plus" aria-hidden="true">[ + ]</div>
+          <h3>Vaše značka tady?</h3>
+          <p>Domluvíme si 30min hovor a sepíšeme rozsah.</p>
+          <a class="btn btn-primary" href="mailto:info@whiterabbit.cz?subject=Web%20pro%20[va%C5%A1i%20zna%C4%8Dku]">Naplánovat hovor →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. Tiery
+         ============================================================ -->
+    <section class="section" id="tiery" aria-labelledby="tiery-h">
+      <header class="section-head">
+        <h2 id="tiery-h">Kolik to stojí</h2>
+        <p class="section-sub">Vyberte si rozsah. Cenu fixujeme po briefu.</p>
+      </header>
+
+      <!-- DRAFT: ceny i timeline jsou návrh dle scope analysis, čekají na potvrzení od Lenky -->
+      <p class="tier-note">DRAFT. Ceny i timeline jsou návrh, finální čísla potvrzuje Lenka. Nepoužívat v ostré nabídce klientovi, dokud nebude potvrzeno.</p>
+
+      <div class="tier-grid">
+
+        <!-- T1 -->
+        <div class="tier-wrap">
+          <div class="tier-rec-spacer" aria-hidden="true"></div>
+          <article class="tier">
+            <div class="tier-cap">01 / VIZITKA</div>
+            <h3>Tier 1. Vizitka</h3>
+            <dl>
+              <dt>Pro koho</dt>
+              <dd>Malé firmy, OSVČ, butiky, eventy, personal brand.</dd>
+              <dt>Co dostanete</dt>
+              <dd>Statický web, 1 až 5 sekcí, kontakt, mobilní optimalizace, SEO základ, Google Analytics setup. Statický export (Next.js, Astro, vanilla).</dd>
+              <dt>Stránek</dt>
+              <dd>1 až 3</dd>
+              <dt>Doba</dt>
+              <dd>1,5 až 2 týdny</dd>
+              <dt>Reference</dt>
+              <dd>Headshots, Monkey Pot, Dark Green Solutions</dd>
+            </dl>
+            <div class="tier-price">50 000 až 75 000 Kč</div>
+          </article>
+        </div>
+
+        <!-- T2 -->
+        <div class="tier-wrap">
+          <div class="tier-rec-spacer" aria-hidden="true"></div>
+          <article class="tier">
+            <div class="tier-cap">02 / STANDARD</div>
+            <h3>Tier 2. Standard</h3>
+            <dl>
+              <dt>Pro koho</dt>
+              <dd>Festivaly, kulturní akce, lifestyle brandy, agentury, B2B služby, lokální podniky, FMCG brandy.</dd>
+              <dt>Co dostanete</dt>
+              <dd>Multi-page web, custom design, formuláře, SEO + structured data, lokální Google Business napojení, FAQ, content produkce. CMS (WordPress + ACF Pro nebo custom dev).</dd>
+              <dt>Stránek</dt>
+              <dd>5 až 15</dd>
+              <dt>Doba</dt>
+              <dd>2,5 až 3 týdny</dd>
+              <dt>Reference</dt>
+              <dd>Marvis auto, Toma džusy, Lughnasad, whiterabbit.cz</dd>
+            </dl>
+            <div class="tier-price">100 000 až 130 000 Kč</div>
+          </article>
+        </div>
+
+        <!-- T3 (Doporučujeme) -->
+        <div class="tier-wrap">
+          <div class="tier-rec">Doporučujeme</div>
+          <article class="tier">
+            <div class="tier-cap">03 / CUSTOM</div>
+            <h3>Tier 3. Custom</h3>
+            <dl>
+              <dt>Pro koho</dt>
+              <dd>Brandy, co chtějí něco navíc. Muzea, rezidenční projekty, B2B s komplexním produktem, multi-jazyčné weby.</dd>
+              <dt>Co dostanete</dt>
+              <dd>Vše z Tieru 2 plus: multi-language, online booking, e-commerce flow, integrace s API (Google Reviews, ticketing), AI chatbot s knowledge base, custom blocks.</dd>
+              <dt>Stránek</dt>
+              <dd>10+ a custom features</dd>
+              <dt>Doba</dt>
+              <dd>4 až 5 týdnů</dd>
+              <dt>Reference</dt>
+              <dd>Beer Museum (multilang, ticketing, reviews)</dd>
+            </dl>
+            <div class="tier-price">180 000 až 280 000 Kč</div>
+          </article>
+        </div>
+
+        <!-- T4 -->
+        <div class="tier-wrap">
+          <div class="tier-rec-spacer" aria-hidden="true"></div>
+          <article class="tier">
+            <div class="tier-cap">04 / HEAVY CUSTOM</div>
+            <h3>Tier 4. Heavy Custom / Commerce</h3>
+            <dl>
+              <dt>Pro koho</dt>
+              <dd>E-shopy, vstupenkové portály, předplatné, B2B objednávkové systémy, immersive experience weby.</dd>
+              <dt>Co dostanete</dt>
+              <dd>Vše z Tieru 3 plus: payment gateway (GP webpay, Comgate, Stripe), produktový katalog, skladové hospodářství, vícestupňový checkout, napojení na CRM, WebAR a 3D experience.</dd>
+              <dt>Stránek</dt>
+              <dd>15+ a commerce flow a custom experience</dd>
+              <dt>Doba</dt>
+              <dd>7 až 10 týdnů</dd>
+              <dt>Reference</dt>
+              <dd>Beer Museum + chystaný WebAR + e-shop upgrade</dd>
+            </dl>
+            <div class="tier-price">od 300 000 Kč</div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. V ceně. A co není.
+         ============================================================ -->
+    <section class="section" aria-labelledby="incl-h">
+      <header class="section-head">
+        <h2 id="incl-h">V ceně. A co není.</h2>
+        <p class="section-sub">Žádné překvapení po podpisu. Co je standard, co je extra.</p>
+      </header>
+
+      <div class="incl-grid">
+        <div class="incl-col incl-col--yes">
+          <h3>V ceně každého tieru</h3>
+          <ul>
+            <li>Strategická konzultace na začátku, definice cílů</li>
+            <li>Wireframy a designové návrhy</li>
+            <li>Vývoj a deployment na vlastní hosting nebo klientův</li>
+            <li>Mobilní responsivita, SEO základ, accessibility</li>
+            <li>14 dní support po předání (bug fixy zdarma)</li>
+            <li>Dokumentace pro klienta, předávací schůzka</li>
+            <li>Domain DNS setup, SSL certifikát</li>
+          </ul>
+        </div>
+        <div class="incl-col incl-col--no">
+          <h3>Co není v ceně</h3>
+          <ul>
+            <li>Hosting po prvním roce (klient si platí sám, nebo přejde k nám za měsíční fee)</li>
+            <li>Pravidelný content management (psaní článků, foto, video)</li>
+            <li>Performance kampaně, Meta Ads, Google Ads (samostatná služba)</li>
+            <li>Doména registrace (klient si kupuje sám, my pomůžeme nakonfigurovat)</li>
+            <li>Stock fotografie nebo placené ilustrace (zařídíme za nákladovou cenu)</li>
+            <li>Continuous development po 14 dnech (samostatnou smlouvou nebo retainerem)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. Jak to děláme (proces)
+         ============================================================ -->
+    <section class="section" id="proces" aria-labelledby="proc-h">
+      <header class="section-head">
+        <h2 id="proc-h">Jak to děláme</h2>
+        <p class="section-sub">5 kroků. Bez tichých měsíců, bez půldenních schůzek o ničem.</p>
+      </header>
+
+      <ol class="proc">
+        <li class="proc-step">
+          <div class="proc-num">01</div>
+          <div class="proc-name">BRIEF.</div>
+          <p class="proc-desc">Zjistíme, co chcete a komu to mluví. Cílovky, konkurence, KPI.</p>
+        </li>
+        <li class="proc-step">
+          <div class="proc-num">02</div>
+          <div class="proc-name">NÁVRH.</div>
+          <p class="proc-desc">Wireframes a směr designu. Schvalujete na 1 schůzce, pak fixujeme.</p>
+        </li>
+        <li class="proc-step">
+          <div class="proc-num">03</div>
+          <div class="proc-name">STAVBA.</div>
+          <p class="proc-desc">Code, deploy, testing. Týdenní reporty, žádné měsíční ticho.</p>
+        </li>
+        <li class="proc-step">
+          <div class="proc-num">04</div>
+          <div class="proc-name">PŘEDÁNÍ.</div>
+          <p class="proc-desc">Spuštění a dokumentace. Naučíme vás obsah upravovat sami.</p>
+        </li>
+        <li class="proc-step">
+          <div class="proc-num">05</div>
+          <div class="proc-name">KLID.</div>
+          <p class="proc-desc">14 dní support zdarma. Pak buď retainer nebo klid. Nikdo se nelepí.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============================================================
+         8. FAQ
+         ============================================================ -->
+    <section class="section" aria-labelledby="faq-h">
+      <header class="section-head">
+        <h2 id="faq-h">Časté otázky</h2>
+      </header>
+
+      <div class="faq">
+        <article class="faq-item">
+          <div class="faq-q">Jak dlouho trvá zaplatit?</div>
+          <p class="faq-a">Zálohu 30 % před startem, 40 % po schválení designu, 30 % při předání. Faktury se splatností 14 dní.</p>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">Můžu si web spravovat sám?</div>
+          <p class="faq-a">Ano, předáváme dokumentaci a edit přístup. Pro Tier 2 a výš má klient admin panel.</p>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">Pracujete s WordPress?</div>
+          <p class="faq-a">Ano, ale doporučujeme statické řešení nebo headless CMS. WordPress jen tam, kde to klient výslovně chce.</p>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">Co když web spadne v 3:00 ráno?</div>
+          <p class="faq-a">Pokud je v rámci 14denního supportu, řešíme do 4 hodin. Mimo to v rámci retaineru. Bez retaineru: další pracovní den.</p>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">Můžete mi udělat jen design?</div>
+          <p class="faq-a">Ne. Děláme strategy + design + code dohromady. Half-services nedávají smysl.</p>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">Pracujete s ČR i zahraničím?</div>
+          <p class="faq-a">ČR a Slovensko bez omezení. EU občas. Globálně zatím ne.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. Kontakt / CTA
+         ============================================================ -->
+    <section class="contact" id="kontakt" aria-labelledby="kontakt-h">
+      <h2 id="kontakt-h" class="visually-hidden" style="position:absolute;left:-9999px;">Kontakt</h2>
+      <a class="contact-mail" href="mailto:info@whiterabbit.cz?subject=Web%20pro%20[va%C5%A1i%20zna%C4%8Dku]">info@whiterabbit.cz</a>
+      <p class="contact-sub">Pošlete nám pár vět o značce a rozsahu. Ozveme se do dvou pracovních dnů.</p>
+      <!-- TODO: replace mailto with cal.com link when available -->
+      <a class="btn btn-outline" href="mailto:info@whiterabbit.cz?subject=Web%20pro%20[va%C5%A1i%20zna%C4%8Dku]%20%C2%B7%2030min%20hovor">Naplánovat 30min hovor</a>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       Footer
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-tagline">Follow the White Rabbit...</div>
+    <!-- TODO: replace IČO TODO and VAT TODO with real values -->
+    <div class="footer-meta">White Rabbit s.r.o. · IČO TODO · VAT TODO · Letná, Praha</div>
+    <div class="footer-bottom">
+      <div>© 2026 White Rabbit</div>
+      <div>Hlavní web: <a href="https://whiterabbit.cz">whiterabbit.cz</a></div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
