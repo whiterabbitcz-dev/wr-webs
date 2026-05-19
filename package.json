@@ -1,0 +1,12 @@
+{
+  "name": "wr-webs",
+  "private": true,
+  "description": "White Rabbit microsite — utility scripts only. The site itself is vanilla HTML/CSS/JS with no build step.",
+  "scripts": {
+    "capture": "node scripts/capture-screenshots.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.50.0",
+    "sharp": "^0.34.0"
+  }
+}
