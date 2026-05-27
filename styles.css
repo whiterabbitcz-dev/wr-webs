@@ -227,41 +227,6 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
 }
 
 /* ============================================================
-   Stats strip
-   ============================================================ */
-
-.stats {
-  border-top: 1px solid var(--dark-gray);
-  border-bottom: 1px solid var(--dark-gray);
-}
-
-.stats-inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  text-align: center;
-}
-
-@media (max-width: 480px) {
-  .stats-inner { grid-template-columns: 1fr; }
-}
-
-.stat-num {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: bold;
-  color: var(--accent);
-  line-height: 1;
-}
-.stat-label {
-  margin-top: 0.5rem;
-  color: var(--gray-soft);
-  font-size: 0.95rem;
-}
-
-/* ============================================================
    Generic section
    ============================================================ */
 
