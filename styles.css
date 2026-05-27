@@ -21,6 +21,11 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 html { scroll-behavior: smooth; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -328,7 +333,7 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   opacity: 1;
 }
 .show-thumb::after {
-  content: 'Otevřít web →';
+  content: 'Otevřít web';
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.65);
@@ -342,19 +347,18 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   transition: opacity 0.2s ease;
 }
 
-.show-status,
 .show-tier {
   position: absolute;
   top: 0.75rem;
+  right: 0.75rem;
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   font-weight: bold;
   padding: 0.3rem 0.55rem;
   background: var(--bg);
+  color: var(--gray-soft);
   z-index: 2;
 }
-.show-status { left: 0.75rem; color: var(--accent); }
-.show-tier   { right: 0.75rem; color: var(--gray-soft); }
 
 .show-body {
   padding: 1.25rem;
