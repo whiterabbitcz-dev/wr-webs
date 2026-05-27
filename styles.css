@@ -240,12 +240,13 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  text-align: center;
 }
 
-@media (max-width: 767px) {
-  .stats-inner { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 480px) {
+  .stats-inner { grid-template-columns: 1fr; }
 }
 
 .stat-num {
@@ -294,19 +295,6 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
    Showcase grid (sec 4) · card format B (top border)
    ============================================================ */
 
-.show-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 1023px) {
-  .show-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 639px) {
-  .show-grid { grid-template-columns: 1fr; }
-}
-
 .show-tile {
   background: var(--dark-gray);
   border-top: 4px solid var(--accent);
@@ -347,26 +335,6 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   transition: opacity 0.2s ease;
 }
 
-.show-tier {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  font-weight: bold;
-  padding: 0.3rem 0.55rem;
-  background: var(--bg);
-  color: var(--accent);
-  z-index: 3;
-  border: 1px solid var(--accent);
-  transition: background 0.15s ease, color 0.15s ease;
-}
-.show-tier:hover,
-.show-tier:focus-visible {
-  background: var(--accent);
-  color: var(--bg);
-}
-
 .show-body {
   padding: 1.25rem;
   display: flex;
@@ -392,41 +360,8 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   word-break: break-all;
 }
 
-/* CTA tile (9th) · inverse */
-
-.show-cta {
-  background: var(--bg);
-  border: 2px solid var(--accent);
-  border-top: 4px solid var(--accent);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  min-height: 100%;
-}
-.show-cta-plus {
-  font-size: 2rem;
-  color: var(--accent);
-  font-weight: bold;
-  line-height: 1;
-}
-.show-cta h3 {
-  font-size: 1.25rem;
-  color: var(--accent);
-  font-weight: bold;
-}
-.show-cta p {
-  color: var(--gray-soft);
-  font-size: 0.95rem;
-}
-.show-cta .btn {
-  align-self: flex-start;
-  margin-top: 0.5rem;
-}
-
 /* ============================================================
-   Varianty (sec 5) · 4 stack sekcí, 2-col na desktopu
+   Varianty (sec 4) · 4 stack sekcí, 2-col na desktopu
    ============================================================ */
 
 .section--varianty-intro {
@@ -652,51 +587,7 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
 }
 
 /* ============================================================
-   V ceně / není v ceně (sec 6)
-   ============================================================ */
-
-.incl-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-@media (max-width: 767px) {
-  .incl-grid { grid-template-columns: 1fr; }
-}
-
-.incl-col {
-  background: var(--dark-gray);
-  padding: 1.5rem;
-}
-.incl-col--yes { border-left: 4px solid var(--accent); }
-.incl-col--no  { border-left: 4px solid var(--gray); }
-
-.incl-col h3 {
-  font-size: 1.15rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.incl-col--yes h3 { color: var(--accent); }
-.incl-col--no  h3 { color: var(--gray-soft); }
-
-.incl-col ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  color: var(--gray-soft);
-  font-size: 0.95rem;
-}
-.incl-col li { padding-left: 1.25rem; position: relative; }
-.incl-col--yes li::before {
-  content: '+'; position: absolute; left: 0; color: var(--accent); font-weight: bold;
-}
-.incl-col--no li::before {
-  content: '·'; position: absolute; left: 0; color: var(--gray); font-weight: bold;
-}
-
-/* ============================================================
-   Proces (sec 7) · 5 steps
+   Proces (sec 5) · 5 steps
    ============================================================ */
 
 .proc {
